@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_PP</title>
+    <link rel="stylesheet" href="project_pp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+        <div class="main">
+            <div class="team_name">
+                    <h3>Night Owl</h3>
+                </div>
+            <div class="menu_Resize">
+                    <i class='bx bx-menu'></i>
+                </div>
+            <div class="new-navbar">
+                <div class="dropdown">
+                        <li class="about_us_btn">
+                            <input type="checkbox" id="btn_check">
+                            <label for="btn_check">
+                                About us
+                            </label>
+                            <div class="btn-text1">
+                                <p>
+                                • Our vision
+                                <br><br>The team has honed in on resolving issues like difficulties in accessing football match schedules, hindering fans' ability to follow their favorite teams effectively.
+                                <br><br>
+                                • Page name
+                                <br><br>"NIGHT OWL" website is named after the creators' nocturnal university study and development schedule, offering a solution to ensure fans don't miss their favorite football matches at RUPP.
+                                </p>
+                                </div>
+                        </li>
+
+                        <li class="feature_btn">
+                            <input type="checkbox" id="btn_check2">
+                            <label for="btn_check2">Feature
+                                </label>
+                            <div class="btn-text2">
+                            <pre><h4>Football association in RUPP:     </h4>
+• Schedule of competitionbr
+• Biography of the teams, rank
+                             <h4>Football Club for Rupp</h4>• Register -> Create a football team -> Search and <br>find team to compete ->Enter the match's time and location....
+
+                            </pre>
+                        </div>
+                    </li>
+
+                        <li class="contact_us_btn">
+
+                            <input type="checkbox" id="btn_check3">
+                            <label for="btn_check3">
+                            Contact us
+                            </label>
+
+                            <div class="btn_text3">
+                                <img src="images/fb.png" ><p>@Ry Kimchhay.</p>
+                                <img src="images/ig.png" ><p>@Ry Kimchhay.</p>
+                                <img src="images/telegram.png" ><p>016 852 056.</p>
+                                <img src="images/locate.png" alt=""><a href="https://www.google.com/maps/place/Building+D,+St+315,+Phnom+Penh/@11.5694097,104.8893267,21z/data=!4m6!3m5!1s0x3109519f065351db:0x96c091c8eab4fce6!8m2!3d11.5694206!4d104.8891333!16s%2Fg%2F11_qkqfd3?entry=ttu" target="_blank">Building A of Rupp.</a>
+                        </div>
+                        </li>
+                        <li id="login_button">Login now</li>
+                </div>
+                <script>
+                    const toggleBtn = document.querySelector('.menu_Resize')
+                    const toggleBtnIcon = document.querySelector('.menu_Resize i')
+                    const dropdownMenu = document.querySelector('.dropdown')
+
+                    toggleBtn.onclick =function () {
+                        dropdownMenu.classList.toggle('open')
+                        const isOpen = dropdownMenu.classList.contains('open')
+                        toggleBtnIcon.classList =isOpen
+                        ?'bx bx-x'
+                        :'bx bx-menu'
+                    }
+                </script>
+            </div>
+            <div class="navbar">
+                <div class="icon">
+                    <img src="images/PP_N_O_logo.png" alt="">
+                </div>
+
+                <div class="menu">
+                    <div class="main_menu">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="check">
+                                <div class="about_us">
+                                <label for="check">
+                                    About Us <i class='bx bxs-chevron-down'></i>
+                                </label>
+                                </div>
+                                 <div class="text">
+                                    <p>
+                                    • Our vision
+                                    <br><br>The team has honed in on resolving issues like difficulties in accessing football match schedules, hindering fans' ability to follow their favorite teams effectively.
+                                    <br><br>
+                                    • Page name
+                                    <br><br>"NIGHT OWL" website is named after the creators' nocturnal university study and development schedule, offering a solution to ensure fans don't miss their favorite football matches at RUPP.</p>
+                                    </div>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="check2">
+                                    <div class="feature">
+                                    <label for="check2">
+                                        Features <i class='bx bxs-chevron-down'></i>
+                                    </label>
+                                </div>
+
+                            <div class="text2">
+                                <pre><h4>Football association in RUPP:                                                                                        Annabel business:   </h4>
+    • Schedule of competitionbr                                                                        • Selling sports product
+                                 <br>   • Biography of the teams, rank                                                                     • High quality products
+                                 <br>                                                                                                                                • Affordable Price
+                                 <h4>Football Club for Rupp</h4><br>• Register -> Create a football team -> Search and find team to compete <br>->Enter the match's time and location.
+
+                                </pre>
+                            </div>
+                                </li>
+
+                            <li>
+                                <input type="checkbox" id="check3">
+                                <div class="contact_us">
+                                    <label for="check3">Contact Us <i class='bx bxs-chevron-down'></i>
+                                </label>
+                            </div>
+                                <div class="text3">
+                                        <img src="images/fb.png" ><p>@Ry Kimchhay.</p>
+                                        <img src="images/ig.png" ><p>@Ry Kimchhay.</p>
+                                        <img src="images/telegram.png" ><p>016 852 056.</p>
+                                        <img src="images/locate.png" alt=""><a href="https://www.google.com/maps/place/Building+D,+St+315,+Phnom+Penh/@11.5694097,104.8893267,21z/data=!4m6!3m5!1s0x3109519f065351db:0x96c091c8eab4fce6!8m2!3d11.5694206!4d104.8891333!16s%2Fg%2F11_qkqfd3?entry=ttu" target="_blank" >Building A of Rupp.</a>
+                                </div>
+
+                            </li>
+                        </ul>
+                        <a href="#" class="btn_sign_up">Sign up now</a>
+                        <p class="bar_profile">|</p>
+                        <i class='bx bxs-user'></i>
+                        <li class="profile_icon">
+                            <input type="checkbox" id="check4">
+                            <div class="my_acc">
+                                <label for="check4">
+                                    My account <i class='bx bxs-chevron-down'></i>
+                                </label>
+                        </div>
+                        <div class="text4">
+                                <i class='bx bx-user-circle'></i>
+                                <h3>User Account</h3>
+                                <hr class="hr_style">
+                                <p id="information_pf">We have no information about you !!</p>
+                                <a href="#" class="Sign_up">Sign up</a>
+                                <p id="ask_to_log_in">already have an account?</p>
+                                <a href="#" id="login">Login.</a>
+                        </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <hr color="gray">
+
+            <div class="content">
+                <h1 class="main_text ">Get Start Now!</h1>
+                <h1>
+                    <div class="inner-headings">
+                            <span style="color: #6E0DBA; ">Enjoy Shopping. <br></span>
+                            <span style="color: rgb(183, 60, 36);">Entertainment. <br></span>
+                        </div>
+                </h1>
+                <p class="content_information">Night Owl’s goal is to enhance the overall experience, <br>improve accessibility, and contribute to the growth of football <br>communities especially in Royal University of Phnom Penh.</p>
+                <a href="./html/homepage.html" class="get_start_button">Get Start!</a>
+            </div>
+            <div class="contact_icon">
+                <p>CONTACT US BY:</p>
+                <a href="#" class="facebook"><img src="images/fb.png"></a>
+                <a href="#" class="instagram"><img src="images/ig.png"></a>
+                <a href="#" class="telegram"><img src="images/telegram.png"></a>
+            </div>
+            <div class="pink_smoke_style">
+                <img src="images/pink_smoke.png">
+            </div>
+            <div class="imgEdit">
+                <img src="images/pic_preview.png">
+            </div>
+        </div>
+</body>
+</html>

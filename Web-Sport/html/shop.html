@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Sports Night</title>
+    <!-- Linking Google Font Link For Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="./../css/shop.css" />
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar__header">
+            <img src="./../images/logo.png" alt="logo" />
+            <h2>Sports Night</h2>
+        </div>
+        <ul class="sidebar__links">
+            <li>
+                <a href="./homepage.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path
+                            d="M7.08848 4.76364L6.08847 5.54453C4.57182 6.72887 3.81348 7.32105 3.40674 8.15601C3 8.99097 3 9.95552 3 11.8846V13.9767C3 17.763 3 19.6562 4.17157 20.8325C5.11466 21.7793 6.52043 21.964 9 22V18.0057C9 17.0738 9 16.6078 9.15224 16.2403C9.35523 15.7502 9.74458 15.3609 10.2346 15.1579C10.6022 15.0057 11.0681 15.0057 12 15.0057C12.9319 15.0057 13.3978 15.0057 13.7654 15.1579C14.2554 15.3609 14.6448 15.7502 14.8478 16.2403C15 16.6078 15 17.0738 15 18.0057V22C17.4796 21.964 18.8853 21.7793 19.8284 20.8325C21 19.6562 21 17.763 21 13.9767V11.8846C21 9.95552 21 8.99097 20.5933 8.15601C20.1865 7.32105 19.4282 6.72887 17.9115 5.54453L16.9115 4.76364C14.5521 2.92121 13.3724 2 12 2C10.6276 2 9.44787 2.92121 7.08848 4.76364Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="./explore.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path d="M14 14L16.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path
+                            d="M16.4333 18.5252C15.8556 17.9475 15.8556 17.0109 16.4333 16.4333C17.0109 15.8556 17.9475 15.8556 18.5252 16.4333L21.5667 19.4748C22.1444 20.0525 22.1444 20.9891 21.5667 21.5667C20.9891 22.1444 20.0525 22.1444 19.4748 21.5667L16.4333 18.5252Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M16 9C16 5.13401 12.866 2 9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    Explore
+                </a>
+            </li>
+            <li>
+                <a href="./saved.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none">
+                        <path
+                            d="M4 17.9808V9.70753C4 6.07416 4 4.25748 5.17157 3.12874C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.12874C20 4.25748 20 6.07416 20 9.70753V17.9808C20 20.2867 20 21.4396 19.2272 21.8523C17.7305 22.6514 14.9232 19.9852 13.59 19.1824C12.8168 18.7168 12.4302 18.484 12 18.484C11.5698 18.484 11.1832 18.7168 10.41 19.1824C9.0768 19.9852 6.26947 22.6514 4.77285 21.8523C4 21.4396 4 20.2867 4 17.9808Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Saved
+                </a>
+            </li>
+            <li>
+                <a href="./profile.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none">
+                        <path
+                            d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    Profile
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none">
+                        <path d="M8 13.5H16M8 8.5H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M6.09881 19C4.7987 18.8721 3.82475 18.4816 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10.5C2 6.72876 2 4.84315 3.17157 3.67157C4.34315 2.5 6.22876 2.5 10 2.5H14C17.7712 2.5 19.6569 2.5 20.8284 3.67157C22 4.84315 22 6.72876 22 10.5V11C22 14.7712 22 16.6569 20.8284 17.8284C19.6569 19 17.7712 19 14 19C13.4395 19.0125 12.9931 19.0551 12.5546 19.155C11.3562 19.4309 10.2465 20.0441 9.14987 20.5789C7.58729 21.3408 6.806 21.7218 6.31569 21.3651C5.37769 20.6665 6.29454 18.5019 6.5 17.5"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="./history.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none">
+                        <path
+                            d="M5.04798 8.60657L2.53784 8.45376C4.33712 3.70477 9.503 0.999914 14.5396 2.34474C19.904 3.77711 23.0904 9.26107 21.6565 14.5935C20.2227 19.926 14.7116 23.0876 9.3472 21.6553C5.36419 20.5917 2.58192 17.2946 2 13.4844"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Purchased History
+                </a>
+            </li>
+            <li>
+                <a class="shopBtn" href="./shop.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        fill="none">
+                        <path
+                            d="M3.87289 17.0194L2.66933 9.83981C2.48735 8.75428 2.39637 8.21152 2.68773 7.85576C2.9791 7.5 3.51461 7.5 4.58564 7.5H19.4144C20.4854 7.5 21.0209 7.5 21.3123 7.85576C21.6036 8.21152 21.5126 8.75428 21.3307 9.83981L20.1271 17.0194C19.7282 19.3991 19.5287 20.5889 18.7143 21.2945C17.9 22 16.726 22 14.3782 22H9.62182C7.27396 22 6.10003 22 5.28565 21.2945C4.47127 20.5889 4.27181 19.3991 3.87289 17.0194Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path d="M17.5 7.5C17.5 4.46243 15.0376 2 12 2C8.96243 2 6.5 4.46243 6.5 7.5"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    Shop
+                </a>
+            </li>
+            <li>
+                <a href="./settings.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path
+                            d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M21.011 14.0965C21.5329 13.9558 21.7939 13.8854 21.8969 13.7508C22 13.6163 22 13.3998 22 12.9669V11.0332C22 10.6003 22 10.3838 21.8969 10.2493C21.7938 10.1147 21.5329 10.0443 21.011 9.90358C19.0606 9.37759 17.8399 7.33851 18.3433 5.40087C18.4817 4.86799 18.5509 4.60156 18.4848 4.44529C18.4187 4.28902 18.2291 4.18134 17.8497 3.96596L16.125 2.98673C15.7528 2.77539 15.5667 2.66972 15.3997 2.69222C15.2326 2.71472 15.0442 2.90273 14.6672 3.27873C13.208 4.73448 10.7936 4.73442 9.33434 3.27864C8.95743 2.90263 8.76898 2.71463 8.60193 2.69212C8.43489 2.66962 8.24877 2.77529 7.87653 2.98663L6.15184 3.96587C5.77253 4.18123 5.58287 4.28891 5.51678 4.44515C5.45068 4.6014 5.51987 4.86787 5.65825 5.4008C6.16137 7.3385 4.93972 9.37763 2.98902 9.9036C2.46712 10.0443 2.20617 10.1147 2.10308 10.2492C2 10.3838 2 10.6003 2 11.0332V12.9669C2 13.3998 2 13.6163 2.10308 13.7508C2.20615 13.8854 2.46711 13.9558 2.98902 14.0965C4.9394 14.6225 6.16008 16.6616 5.65672 18.5992C5.51829 19.1321 5.44907 19.3985 5.51516 19.5548C5.58126 19.7111 5.77092 19.8188 6.15025 20.0341L7.87495 21.0134C8.24721 21.2247 8.43334 21.3304 8.6004 21.3079C8.76746 21.2854 8.95588 21.0973 9.33271 20.7213C10.7927 19.2644 13.2088 19.2643 14.6689 20.7212C15.0457 21.0973 15.2341 21.2853 15.4012 21.3078C15.5682 21.3303 15.7544 21.2246 16.1266 21.0133L17.8513 20.034C18.2307 19.8187 18.4204 19.711 18.4864 19.5547C18.5525 19.3984 18.4833 19.132 18.3448 18.5991C17.8412 16.6616 19.0609 14.6226 21.011 14.0965Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <div class="main__container">
+            <!-- Navigation Bar Shop  -->
+            <div class="navigation-bar-shop">
+                <nav>
+                    <div class="left-container">
+                        <button class="live-score-btn"> Live Score </button>
+                        <button class="live-score-btn"> Shop </button>
+                        <button class="live-score-btn"> Schedules </button>
+                    </div>
+                    <div>
+                        <div class="input-container">
+                            <input type="text" name="text" class="input" placeholder="search...">
+                            <span class="icon">
+                                <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                                            stroke="#000" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                        </path>
+                                        <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <button class="notifications-btn">
+                            <svg viewBox="0 0 448 512" class="bell">
+                                <path
+                                    d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z">
+                                </path>
+                            </svg>
+                        </button>
+                        <img src="../images/pfp.jpg">
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Shop Banner -->
+            <div class="banner-container">
+                <div class="banner-text-container">
+                    <h1>Discover Our sport products</h1>
+                    <p>Top-notch products await! Explore quality like never before. Start shopping now!</p>
+                    <button class="shop__now__btn">
+                        <span class="shop__now__btn_lg">
+                            <span class="shop__now__btn_sl"></span>
+                            <div class="shop__now__btn__text_container">
+                                <span class="shop__now__btn_text">
+                                    Shop Now
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+                        </span>
+                    </button>
+                </div>
+                <img src="./../images/banner-sports.png" alt="">
+            </div>
+
+            <!-- Most popular products -->
+            <div>
+                <h1 class="most__popular__products__text">Most popular products</h1>
+                <div class="card__container">
+                    <!-- Product Card 01 -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./../images/shoes-01.png" alt="">
+                            <div class="price">$49.9</div>
+                        </div>
+                        <label class="favorite">
+                            <input checked="" type="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                                <path
+                                    d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <div class="content">
+                            <div class="brand">ADIDAS</div>
+                            <div class="product-name">Classic oversized hoodie</div>
+                            <div class="color-size-container">
+                                <div class="colors">
+                                    Color
+                                    <ul class="colors-container">
+                                        <li class="color"><a href="#"></a> <span class="color-name">Collegiate
+                                                Gold</span>
+                                        </li>
+                                        <li class="color active"><a href="#"></a><span class="color-name">Team
+                                                Navy</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pulse Blue</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pink Fusion</span>
+                                        </li>
+                                        +2
+                                    </ul>
+                                </div>
+                                <div class="sizes">
+                                    Size
+                                    <ul class="size-container">
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size" value="xs" type="radio">
+                                                <span class="name">XS</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input checked="" name="size" value="s" type="radio">
+                                                <span class="name">S</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size" value="m" type="radio">
+                                                <span class="name">M</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size" value="l" type="radio">
+                                                <span class="name">L</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size" value="xl" type="radio">
+                                                <span class="name">XL</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg"
+                                    class="svg four-star-svg">
+                                    <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        id="star-svgrepo-com"></path>
+                                    <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                                    <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                                    <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                                    <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                                </svg>
+                                (29,062)
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button class="buy-button button">Buy Now</button>
+                            <button class="cart-button button">
+                                <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                        id="cart-shopping-solid"></path>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 02 -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./../images/shoes-02.png" alt="">
+                            <div class="price">$180</div>
+                        </div>
+                        <label class="favorite">
+                            <input checked="" type="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                                <path
+                                    d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <div class="content">
+                            <div class="brand">Nike Mercurial Superfly 10 Elite Electric</div>
+                            <div class="product-name">FG High-Top Soccer Cleats</div>
+                            <div class="color-size-container">
+                                <div class="colors">
+                                    Color
+                                    <ul class="colors-container">
+                                        <li class="color"><a href="#"></a> <span class="color-name">Collegiate
+                                                Gold</span>
+                                        </li>
+                                        <li class="color active"><a href="#"></a><span class="color-name">Team
+                                                Navy</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pulse Blue</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pink Fusion</span>
+                                        </li>
+                                        +2
+                                    </ul>
+                                </div>
+                                <div class="sizes">
+                                    Size
+                                    <ul class="size-container">
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="xs" type="radio">
+                                                <span class="name">XS</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input checked="" name="size2" value="s" type="radio">
+                                                <span class="name">S</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="m" type="radio">
+                                                <span class="name">M</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="l" type="radio">
+                                                <span class="name">L</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="xl" type="radio">
+                                                <span class="name">XL</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg"
+                                    class="svg four-star-svg">
+                                    <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        id="star-svgrepo-com"></path>
+                                    <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                                    <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                                    <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                                    <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                                </svg>
+                                (29,062)
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button class="buy-button button">Buy Now</button>
+                            <button class="cart-button button">
+                                <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                        id="cart-shopping-solid"></path>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 03 -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./../images/shirt-03.png" alt="">
+                            <div class="price">$49.9</div>
+                        </div>
+                        <label class="favorite">
+                            <input checked="" type="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                                <path
+                                    d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <div class="content">
+                            <div class="brand">NIKE</div>
+                            <div class="product-name">Shirts Sports</div>
+                            <div class="color-size-container">
+                                <div class="colors">
+                                    Color
+                                    <ul class="colors-container">
+                                        <li class="color"><a href="#"></a> <span class="color-name">Collegiate
+                                                Gold</span>
+                                        </li>
+                                        <li class="color active"><a href="#"></a><span class="color-name">Team
+                                                Navy</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pulse Blue</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pink Fusion</span>
+                                        </li>
+                                        +2
+                                    </ul>
+                                </div>
+                                <div class="sizes">
+                                    Size
+                                    <ul class="size-container">
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size3" value="xs" type="radio">
+                                                <span class="name">XS</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input checked="" name="size3" value="s" type="radio">
+                                                <span class="name">S</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size3" value="m" type="radio">
+                                                <span class="name">M</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size3" value="l" type="radio">
+                                                <span class="name">L</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size3" value="xl" type="radio">
+                                                <span class="name">XL</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg"
+                                    class="svg four-star-svg">
+                                    <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        id="star-svgrepo-com"></path>
+                                    <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                                    <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                                    <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                                    <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                                </svg>
+                                (29,062)
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button class="buy-button button">Buy Now</button>
+                            <button class="cart-button button">
+                                <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                        id="cart-shopping-solid"></path>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 04 -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./../images/shoes-02.png" alt="">
+                            <div class="price">$180</div>
+                        </div>
+                        <label class="favorite">
+                            <input checked="" type="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+                                <path
+                                    d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <div class="content">
+                            <div class="brand">Nike Mercurial Superfly 10 Elite Electric</div>
+                            <div class="product-name">FG High-Top Soccer Cleats</div>
+                            <div class="color-size-container">
+                                <div class="colors">
+                                    Color
+                                    <ul class="colors-container">
+                                        <li class="color"><a href="#"></a> <span class="color-name">Collegiate
+                                                Gold</span>
+                                        </li>
+                                        <li class="color active"><a href="#"></a><span class="color-name">Team
+                                                Navy</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pulse Blue</span>
+                                        </li>
+                                        <li class="color"><a href="#"></a><span class="color-name">Pink Fusion</span>
+                                        </li>
+                                        +2
+                                    </ul>
+                                </div>
+                                <div class="sizes">
+                                    Size
+                                    <ul class="size-container">
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="xs" type="radio">
+                                                <span class="name">XS</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input checked="" name="size2" value="s" type="radio">
+                                                <span class="name">S</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="m" type="radio">
+                                                <span class="name">M</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="l" type="radio">
+                                                <span class="name">L</span>
+                                            </label>
+                                        </li>
+                                        <li class="size">
+                                            <label class="size-radio">
+                                                <input name="size2" value="xl" type="radio">
+                                                <span class="name">XL</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <svg viewBox="0 0 99.498 16.286" xmlns="http://www.w3.org/2000/svg"
+                                    class="svg four-star-svg">
+                                    <path fill="#fc0" transform="translate(-0.001 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        id="star-svgrepo-com"></path>
+                                    <path fill="#fc0" transform="translate(20.607 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-2"></path>
+                                    <path fill="#fc0" transform="translate(41.215 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-3"></path>
+                                    <path fill="#fc0" transform="translate(61.823 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-4"></path>
+                                    <path fill="#e9e9e9" transform="translate(82.431 -1.047)"
+                                        d="M9.357,1.558,11.282,5.45a.919.919,0,0,0,.692.5l4.3.624a.916.916,0,0,1,.509,1.564l-3.115,3.029a.916.916,0,0,0-.264.812l.735,4.278a.919.919,0,0,1-1.334.967l-3.85-2.02a.922.922,0,0,0-.855,0l-3.85,2.02a.919.919,0,0,1-1.334-.967l.735-4.278a.916.916,0,0,0-.264-.812L.279,8.14A.916.916,0,0,1,.789,6.576l4.3-.624a.919.919,0,0,0,.692-.5L7.71,1.558A.92.92,0,0,1,9.357,1.558Z"
+                                        data-name="star-svgrepo-com" id="star-svgrepo-com-5"></path>
+                                </svg>
+                                (29,062)
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button class="buy-button button">Buy Now</button>
+                            <button class="cart-button button">
+                                <svg viewBox="0 0 27.97 25.074" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0,1.175A1.173,1.173,0,0,1,1.175,0H3.4A2.743,2.743,0,0,1,5.882,1.567H26.01A1.958,1.958,0,0,1,27.9,4.035l-2.008,7.459a3.532,3.532,0,0,1-3.4,2.61H8.36l.264,1.4a1.18,1.18,0,0,0,1.156.955H23.9a1.175,1.175,0,0,1,0,2.351H9.78a3.522,3.522,0,0,1-3.462-2.865L3.791,2.669A.39.39,0,0,0,3.4,2.351H1.175A1.173,1.173,0,0,1,0,1.175ZM6.269,22.724a2.351,2.351,0,1,1,2.351,2.351A2.351,2.351,0,0,1,6.269,22.724Zm16.455-2.351a2.351,2.351,0,1,1-2.351,2.351A2.351,2.351,0,0,1,22.724,20.373Z"
+                                        id="cart-shopping-solid"></path>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Banner Ad  -->
+            <div class="banner-container-ad">
+                <div class="banner">
+                    <div class="shoe">
+                        <img src="../images/shoe.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span>upto</span>
+                        <h3>50% 0ff</h3>
+                        <p>offer ends after 5 days</p>
+                        <a href="#" class="btn">veiw offer</a>
+                    </div>
+                    <div class="women">
+                        <img src="../images/banner-sports.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
